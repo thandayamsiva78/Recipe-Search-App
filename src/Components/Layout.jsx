@@ -22,8 +22,8 @@ function Layout() {
             if (input.trim().toLowerCase()) {
                 const response = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${input}`);
                 const data = await response.json()
-                setSearch("Searched Recipe Lists :",data.meals)
-                // console.log("meal Detail :", data.meals);
+                setSearch(data.meals)
+                console.log("Searched Recipe Lists :", data.meals);
             }
         }
         handleQuerySeach()
