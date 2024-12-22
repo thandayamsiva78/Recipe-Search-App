@@ -1,0 +1,42 @@
+
+
+body {
+  font-family: sans-serif , Arial, Helvetica, sans-serif;
+}
+#layout {
+  margin: 0 250px;
+}
+
+
+.text-style{
+  text-shadow: 2px 2px 2px black;
+}
+
+@media (max-width : 1080px) {
+  #layout{
+    margin: 0 0;
+  }
+  .recipeDetails{
+    display: flex;
+    flex-direction: column;
+  }
+  .header {
+    width: 100%;
+  }
+  .search-container{
+    max-width: 400px;
+  }
+}
+
+
+table ,tr , td {
+  border-collapse: collapse;
+  padding: 2px 2px;
+
+}
+/* body {
+  background-image: url("WhatsApp Image 2024-12-22 at 12.57.02 PM.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+} */
