@@ -22,7 +22,7 @@ function Layout() {
             if (input.trim().toLowerCase()) {
                 const response = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${input}`);
                 const data = await response.json()
-                setSearch(data.meals)
+                setSearch("Searched Recipe Lists :",data.meals)
                 // console.log("meal Detail :", data.meals);
             }
         }
@@ -56,7 +56,7 @@ function Layout() {
     return (
         <>
             <section id="layout">
-                <header className="header bg-orange-500 text-white">
+                <header className="header text-white">
                     <div className="flex justify-between items-center py-4 px-6">
                         <h1 className="text-style font-bold text-xl">Recipe App</h1>
                         <nav className="flex gap-6 items-center">
@@ -68,20 +68,22 @@ function Layout() {
                             </ul>
                             <div className="font-bold mr-4">
                                 <a className="hover:underline pr-1" onClick={()=> handleFavoriteBtnClick()} href="">Favorites</a>
-                                <span className="bg-black rounded-full px-1.5 text-white absolute">{count}</span>
+                                <span className="bg-red-600 rounded-full px-1.5 text-white absolute">{count}</span>
                             </div>
-                            <div className="flex gap-3 ">
-                                <button className="py-2 px-4 border border-1 rounded-3xl font-bold bg-white text-black hover:bg-black hover:text-white">Sign In</button>
-                                <button className="py-2 px-4 border border-1 rounded-3xl font-bold bg-white text-black hover:bg-black hover:text-white">Login</button>
+                            <div className="flex gap-3 font-semibold">
+                                <button className="btns py-2 px-4 hover:bg-white hover:text-black font-medium rounded-3xl hover:font-bold text-white">Sign In</button>
+                                <button className="btns py-2 px-4 hover:bg-white hover:text-black font-medium rounded-3xl hover:font-bold text-white">Login</button>
                             </div>
                         </nav>
                     </div>
                 </header>
-                <div className="search-container flex justify-between items-center w-[400px]  pr-2 mt-10 border-gray-500 border-2 rounded-3xl mx-10">
+                <div className="searchContainer flex justify-center items-center">
+                    <div className="search-container flex justify-between items-center pr-2 border-gray-400 border-2 rounded-3xl">
                     <input
                         value={input}
                         onChange={(e) => setInput(e.target.value)}
-                        className="focus:outline-none rounded-3xl border-r-0 py-2 px-4"
+                        className="search-input focus:outline-none rounded-3xl border-r-0 py-2 px-4 w-full text-white
+                        "
                         type="text"
                         placeholder="Search Recipe..." />
                     <div>
@@ -90,11 +92,13 @@ function Layout() {
                         </svg>
 
                     </div>
+                    </div>
                 </div>
 
                 {input === "" ?
                     <FamousRecipes /> :
-                    <article>
+                    <article className="result-recipes">
+                        <h1 className="font-bold pl-6 text-lg mt-10">Searched Recipes...</h1>
                         <div className="p-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
                             {search && search.length > 0 ? (
                                 search.map((item, index) => (

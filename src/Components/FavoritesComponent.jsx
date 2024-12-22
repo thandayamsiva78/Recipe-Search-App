@@ -10,7 +10,7 @@ function FavoritesComponents() {
         if (response) {
             const data = JSON.parse(response)
             setGetData(data)
-            console.log(data);
+            console.log("Fovorites Lists :",data);
         } else {
             console.log("Not Found!");
         }
@@ -21,9 +21,9 @@ function FavoritesComponents() {
     }, [])
     return (
         <>
-            <section className="bg-white shadow-md m-4 rounded-lg">
+            <section className="favorite-component bg-white shadow-md m-4 rounded-lg">
                 <h1 className="text-style text-orange-600 text-3xl font-bold p-4">Your Favorites....</h1>
-
+                <hr />
                 <div className="p-4">
                     <table className="w-full">
                         <thead>
@@ -35,9 +35,8 @@ function FavoritesComponents() {
                         </thead>
                         <tbody >
                             {getData.map((item, index) => (
-
-                                <tr key={index} className="shadow-mg bg-white" >
-                                    <td className="font-bold text-gray-700">{index + 1}</td>
+                                <tr key={index} className="shadow-mg hover:bg-slate-50 cursor-pointer hover:rounded-lg" >
+                                    <td className="font-bold text-gray-700 ">{index + 1}</td>
                                     <td><img className="w-[150px] shadow-md rounded-xl mb-2 p-1" src={item.thumbnail} alt={item.name} /></td>
                                     <td className="font-bold text-gray-700">{item.name}</td>
                                 </tr>

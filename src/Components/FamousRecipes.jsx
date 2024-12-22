@@ -25,7 +25,7 @@ function FamousRecipes() {
 
     const handleRecipeClicked = (index)=> {
         const selected = cards[index]
-        console.log(selected);
+        console.log("Fomous Recipes :",selected);
         setRecipeSelected(selected)
         navigate("./RecipeDetails" , {state : {recipe : selected}});
 
@@ -33,8 +33,8 @@ function FamousRecipes() {
 
     return (
         <>
-            <section className="">
-                <h1 className="font-bold text-xl mt-4 pl-6 text-gray-600 ">Famous Recipes here...</h1>
+            <section className="fomous-recipe ">
+                <h1 className="font-bold text-xl mt-4 pl-6">Famous Recipes here...</h1>
                 <article>
                     <div className="p-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
                         {cards.map((item, index) => (

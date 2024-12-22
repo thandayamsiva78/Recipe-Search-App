@@ -3,17 +3,42 @@
 body {
   font-family: sans-serif , Arial, Helvetica, sans-serif;
 }
-#layout {
+
+.header {
+  background: transparent;
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.footer{
+  background-color: rgba(0, 0, 0, 0.918);
+}
+
+.searchContainer{
+  background-image: url("WhatsApp Image 2024-12-22 at 10.43.34 PM.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  padding-top: 150px;
+
+}
+
+.fomous-recipe  ,.recipe-details ,.favorite-componets ,.result-recipes{
   margin: 0 250px;
 }
 
+.search-container , .search-input{
+  width: 500px;
+  background: transparent;
+}
 
 .text-style{
   text-shadow: 2px 2px 2px black;
 }
 
 @media (max-width : 1080px) {
-  #layout{
+  .fomous-recipe ,.recipe-details ,.favorite-component ,.result-recipes{
     margin: 0 0;
   }
   .recipeDetails{
@@ -26,6 +51,12 @@ body {
   .search-container{
     max-width: 400px;
   }
+  
+.searchContainer{
+  height: 300px;
+  padding-top: 100px;
+
+}
 }
 
 
@@ -33,6 +64,12 @@ table ,tr , td {
   border-collapse: collapse;
   padding: 2px 2px;
 
+}
+
+@media (max-width:768px){
+  .btns{
+    padding: 3px 4px;
+  }
 }
 /* body {
   background-image: url("WhatsApp Image 2024-12-22 at 12.57.02 PM.jpeg");
