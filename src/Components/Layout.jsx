@@ -67,7 +67,7 @@ function Layout() {
                                 <li><a href="">Shop</a></li> */}
                             </ul>
                             <div className="font-bold mr-4">
-                                <a className="hover:underline pr-1" onClick={()=> handleFavoriteBtnClick()} href="">Favorites</a>
+                                <a className="hover:underline pr-1 cursor-pointer" onClick={()=> handleFavoriteBtnClick()}>Favorites</a>
                                 <span className="bg-red-600 rounded-full px-1.5 text-white absolute">{count}</span>
                             </div>
                             <div className="flex gap-3 font-semibold">
