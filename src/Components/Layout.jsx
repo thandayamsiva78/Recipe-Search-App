@@ -63,7 +63,7 @@ function Layout() {
             <section id="layout">
                 <header className="header text-white">
                     <div className="flex justify-between items-center py-4 px-6">
-                        <h1 className="text-style font-bold text-xl">Recipe App</h1>
+                        <h1 className="text-style font-bold text-xl">Recipe</h1>
                         <nav className="flex gap-6 items-center">
                             <ul className="flex gap-3">
                                 {/* <li><a href="">Home</a></li>
