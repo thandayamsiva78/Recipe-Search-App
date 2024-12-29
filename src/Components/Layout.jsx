@@ -75,10 +75,10 @@ function Layout() {
                                 <a className="hover:underline pr-1 cursor-pointer" onClick={() => handleFavoriteBtnClick()}>Favorites</a>
                                 <span className="bg-red-600 rounded-full px-1.5 text-white absolute">{count}</span>
                             </div>
-                            <div className="flex gap-3 font-semibold">
+                            {/* <div className="flex gap-3 font-semibold">
                                 <button className="btns hover:p-2  hover:bg-white hover:text-black font-medium rounded-3xl hover:font-bold text-gray-200">Sign In</button>
                                 <button className="btns hover:p-2  hover:bg-white hover:text-black font-medium rounded-3xl hover:font-bold text-gray-200">Login</button>
-                            </div>
+                            </div> */}
                         </nav>
                     </div>
                 </header>
