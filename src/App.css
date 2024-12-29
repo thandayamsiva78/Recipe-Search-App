@@ -18,7 +18,7 @@ body {
 }
 
 .searchContainer{
-  background-image: url("WhatsApp Image 2024-12-22 at 10.43.34 PM.jpeg");
+  background-image: url("/images/WhatsApp Image 2024-12-22 at 10.43.34 PM.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
@@ -61,6 +61,9 @@ body {
   .text-head{
     font-size: 20px;
   }
+  .btns{
+    font-size: 16px;
+  }
   
 }
 
@@ -71,11 +74,19 @@ table ,tr , td {
 
 }
 
-@media (max-width:768px){
-  .btns{
-    padding: 3px 5px;
+@media (max-width : 768px) {
+ 
+  .text-head{
+    font-size: 16px;
   }
+  .btns{
+    font-size: 16px;
+  }
+  
 }
+
+
+
 /* body {
   background-image: url("WhatsApp Image 2024-12-22 at 12.57.02 PM.jpeg");
   background-size: cover;
