@@ -2,6 +2,7 @@
 
 body {
   font-family: sans-serif , Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
 }
 
 .header {
@@ -50,14 +51,17 @@ body {
     width: 100%;
   }
   .search-container{
-    max-width: 400px;
+    max-width: 300px;
+  }
+  .searchContainer{
+    height: 300px;
+    padding-top: 60px;
+
+  }
+  .text-head{
+    font-size: 20px;
   }
   
-.searchContainer{
-  height: 300px;
-  padding-top: 100px;
-
-}
 }
 
 

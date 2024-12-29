@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 function FavoritesComponents() {
 
     const [getData, setGetData] = useState([])
+    
     const retrivingLocalStorageData = () => {
         const response = localStorage.getItem("Favorites Lists")
         if (response) {

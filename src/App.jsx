@@ -16,7 +16,6 @@ function App() {
           <Route path="/FavoritesComponent" element={ <FavoritesComponents/>}/>
         </Routes>
       </Router>
-      
     </>
   )
 }
