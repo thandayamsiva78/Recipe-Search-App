@@ -76,8 +76,8 @@ function Layout() {
                                 <span className="bg-red-600 rounded-full px-1.5 text-white absolute">{count}</span>
                             </div>
                             <div className="flex gap-3 font-semibold">
-                                <button className="btns py-2 px-4 hover:bg-white hover:text-black font-medium rounded-3xl hover:font-bold text-gray-200">Sign In</button>
-                                <button className="btns py-2 px-4 hover:bg-white hover:text-black font-medium rounded-3xl hover:font-bold text-gray-200">Login</button>
+                                <button className="btns hover:p-2  hover:bg-white hover:text-black font-medium rounded-3xl hover:font-bold text-gray-200">Sign In</button>
+                                <button className="btns hover:p-2  hover:bg-white hover:text-black font-medium rounded-3xl hover:font-bold text-gray-200">Login</button>
                             </div>
                         </nav>
                     </div>
