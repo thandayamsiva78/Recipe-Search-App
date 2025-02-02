@@ -23,7 +23,7 @@ function FavoritesComponents() {
     return (
         <>
             <section className="favorite-component bg-white shadow-md m-4 rounded-lg">
-                <h1 className="text-style text-orange-600 text-3xl font-bold p-4">Your Favorites....</h1>
+                <h1 className="text-orange-600 text-3xl font-bold p-4">Your Favorites....</h1>
                 <hr />
                 <div className="p-4">
                     <table className="w-full">
